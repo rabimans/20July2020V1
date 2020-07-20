@@ -21,9 +21,9 @@ jobs:
       steps:
         uses: garygrossgarten/github-action-scp@release
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.KEY }}
-          source: "home/zombie/rabi/test.tar"
-          target: "home/rabi"
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            port: ${{ secrets.PORT }}
+            key: ${{ secrets.KEY }}
+            source: "home/zombie/rabi/test.tar"
+            target: "home/rabi"
