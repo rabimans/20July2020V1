@@ -16,3 +16,4 @@ jobs:
         key: ${{ secrets.KEY }}
         source: "/home/zombie/rabi/test.xml"
         target: "/home/rabi"
+        strip_components: 2
