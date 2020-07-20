@@ -1,13 +1,19 @@
-name: scp files
-on: [push]
-jobs:
+name: scp copy folder to remote via SSH
 
+on:
+  push
+
+jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@master
-    - name: copy file via ssh key
+      - name: setup demo
+        run: |
+          mkdir test
+          touch test/oof.txt
+      
+      - name: copy file via ssh key
   uses: appleboy/scp-action@master
   with:
     host: ${{ secrets.HOST }}
@@ -15,4 +21,4 @@ jobs:
     port: ${{ secrets.PORT }}
     key: ${{ secrets.KEY }}
     source: "home/zombie/rabi/test.xml"
-    target: "/home/rabi"
+    target: "home/rabi"
