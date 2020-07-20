@@ -14,5 +14,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
-        source: "home/zombie/rabi/test.tar"
+        source: "home/zombie/rabi/test.xml"
         target: "home/rabi"
