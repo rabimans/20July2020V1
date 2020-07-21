@@ -14,5 +14,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY }}
-        local: "home/zombie/rabi/test.yml"
+        local: "home/zombie/rabi/test.xml"
         remote: "home/rabi"
